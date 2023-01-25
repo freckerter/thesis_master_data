@@ -1,0 +1,35 @@
+Grundidee: Allgemeine Vergleiche ganz interessant (vllt alle, vllt zufällige Auswahl)
+
+=>
+
+	-Allgemeines-Benchmarkset
+
+Spezielle: 
+Ein Parameter ändern, andere konstant halten. Parameter der benchmakrs sind hier die Anzahl von: Stationen, Produkten, Worker (nicht Buffer, da abhängig von Stationen).
+Bei jedem von diesen 2 Verschiedene für verschiedene Größen (z.B. Station ändern, Worker/Produkte einmal klein, dann mittel).
+Am einde ein paar große um dort die Performance zu sehen.
+
+=>
+
+	-Stationen-ändern (klein)
+	-Stationen-ändern (mittel)
+
+	-Produkte-ändern (klein)
+	-Produkte-ändern (mittel)
+
+	-Worker-ändern (klein)
+	-Worker-ändern (mittel)
+
+	-Groß
+
+
+File_Namen:
+
+S10-Ex18_W3-Ex12:
+
+S10: 10 stations
+Ex18: Keine Ahnung.
+W3: 3 Worker
+Ex12: Keine Ahnung, hier könnte irgendwo die products drinnen stecken. Größer gleich mehr?
+
+Anzahl Products: Nicht im Namen, immer 5-10-15, kann sein, dass durch Anzahl stations bestimmt oder so. Macht variirende Produktanzahl schwer.

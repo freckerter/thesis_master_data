@@ -1,0 +1,12 @@
+S10-Ex17_W3-Ex7_1
+S10-Ex17_W3-Ex7_2
+S10-Ex17_W3-Ex7_3
+S10-Ex17_W3-Ex7_4
+S10-Ex17_W3-Ex7_5
+S10-Ex17_W3-Ex7_6
+S10-Ex17_W3-Ex7_7
+S10-Ex17_W3-Ex7_8
+S10-Ex17_W3-Ex7_9
+S10-Ex17_W3-Ex7_10
+
+Added the _1 ... _10 at the end and added the instances 1...9. Number stands for amount of products.

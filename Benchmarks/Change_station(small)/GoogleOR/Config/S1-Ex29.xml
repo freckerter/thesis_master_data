@@ -1,0 +1,31 @@
+<FlowShopConfiguration name="S5-Ex29">
+<WalkingTimes>
+<WalkingTime start="STATION-1" end="STATION-1" traveltime="0"/>
+</WalkingTimes>
+<Variants>
+<Variant id="VARIANT-1">
+<WorkSteps>
+<WorkStep id="WORKSTEP-V1-S1" location="STATION-1" automatic="False">
+<Duration>100</Duration>
+</WorkStep>
+</WorkSteps>
+</Variant>
+</Variants>
+<ProcessingUnits>
+<ProcessingUnit type="STATION" id="STATION-1" lane="1" position="1"/>
+</ProcessingUnits>
+</FlowShopConfiguration>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

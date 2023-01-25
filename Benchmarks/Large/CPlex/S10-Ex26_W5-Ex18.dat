@@ -1,0 +1,56 @@
+// timeLimit giving the maximum solving time for the solver
+timeLimit = 300;
+
+numberWorkers = 5;
+numberProducts = 20;
+numberVariants = 1;
+numberStations = 10;
+
+// tuple workerTuples {key int id; int skill; int releasetime; int currentStation;};
+workers = {
+	 <1, 100, 0, 1>,
+	 <2, 100, 0, 2>,
+	 <3, 100, 0, 3>,
+	 <4, 100, 0, 4>,
+	 <5, 100, 0, 5>,
+};
+
+// tuple productTuples {key int id; int variant; int releasetime; int currentStation; int currentBuffer; int currentStep;};
+// where for the current step: 0 = none, 1 = setup, 2 = manual, 3 = automatic, 4 = takedown 
+products = {
+	 <1, 1, 0, 0, 0, 0>,
+	 <2, 1, 0, 0, 0, 0>,
+	 <3, 1, 0, 0, 0, 0>,
+	 <4, 1, 0, 0, 0, 0>,
+	 <5, 1, 0, 0, 0, 0>,
+	 <6, 1, 0, 0, 0, 0>,
+	 <7, 1, 0, 0, 0, 0>,
+	 <8, 1, 0, 0, 0, 0>,
+	 <9, 1, 0, 0, 0, 0>,
+	 <10, 1, 0, 0, 0, 0>,
+	 <11, 1, 0, 0, 0, 0>,
+	 <12, 1, 0, 0, 0, 0>,
+	 <13, 1, 0, 0, 0, 0>,
+	 <14, 1, 0, 0, 0, 0>,
+	 <15, 1, 0, 0, 0, 0>,
+	 <16, 1, 0, 0, 0, 0>,
+	 <17, 1, 0, 0, 0, 0>,
+	 <18, 1, 0, 0, 0, 0>,
+	 <19, 1, 0, 0, 0, 0>,
+	 <20, 1, 0, 0, 0, 0>,
+};
+
+// workstep duration times as [allVariants][allStations] matrix
+workstepDurations = [[288, 72, 221, 173, 275, 96, 197, 182, 210, 162]];
+
+// is automatic flag as a [allVariants][allStations] matrix
+isAutomatic = [[0, 0, 1, 0, 0, 0, 0, 0, 0, 0]];
+
+// setup times as a [allVariants][allStations] matrix
+setupTimes = [[0, 0, 10, 0, 0, 0, 0, 0, 0, 0]];
+
+// takedown times as a [allVariants][allStations] matrix
+takedownTimes = [[0, 0, 10, 0, 0, 0, 0, 0, 0, 0]];
+
+// worker walking times from station to station as a [allStations][allStations] matrix
+workerWalkingTimes = [[0, 10, 20, 30, 40, 50, 60, 50, 40, 30], [10, 0, 10, 20, 30, 40, 50, 40, 30, 40], [20, 10, 0, 10, 20, 30, 40, 30, 40, 50], [30, 20, 10, 0, 10, 20, 30, 40, 50, 60], [40, 30, 20, 10, 0, 10, 20, 30, 40, 50], [50, 40, 30, 20, 10, 0, 10, 20, 30, 40], [60, 50, 40, 30, 20, 10, 0, 10, 20, 30], [50, 40, 30, 40, 30, 20, 10, 0, 10, 20], [40, 30, 40, 50, 40, 30, 20, 10, 0, 10], [30, 40, 50, 60, 50, 40, 30, 20, 10, 0]];

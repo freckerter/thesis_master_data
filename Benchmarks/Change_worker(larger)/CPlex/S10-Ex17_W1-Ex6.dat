@@ -1,0 +1,42 @@
+// timeLimit giving the maximum solving time for the solver
+timeLimit = 300;
+
+numberWorkers = 1;
+numberProducts = 10;
+numberVariants = 1;
+numberStations = 10;
+
+// tuple workerTuples {key int id; int skill; int releasetime; int currentStation;};
+workers = {
+	 <1, 100, 0, 1>,
+};
+
+// tuple productTuples {key int id; int variant; int releasetime; int currentStation; int currentBuffer; int currentStep;};
+// where for the current step: 0 = none, 1 = setup, 2 = manual, 3 = automatic, 4 = takedown 
+products = {
+	 <1, 1, 0, 0, 0, 0>,
+	 <2, 1, 0, 0, 0, 0>,
+	 <3, 1, 0, 0, 0, 0>,
+	 <4, 1, 0, 0, 0, 0>,
+	 <5, 1, 0, 0, 0, 0>,
+	 <6, 1, 0, 0, 0, 0>,
+	 <7, 1, 0, 0, 0, 0>,
+	 <8, 1, 0, 0, 0, 0>,
+	 <9, 1, 0, 0, 0, 0>,
+	 <10, 1, 0, 0, 0, 0>,
+};
+
+// workstep duration times as [allVariants][allStations] matrix
+workstepDurations = [[100, 100, 100, 100, 80, 100, 100, 100, 100, 100]];
+
+// is automatic flag as a [allVariants][allStations] matrix
+isAutomatic = [[0, 0, 0, 0, 1, 0, 0, 0, 0, 0]];
+
+// setup times as a [allVariants][allStations] matrix
+setupTimes = [[0, 0, 0, 0, 10, 0, 0, 0, 0, 0]];
+
+// takedown times as a [allVariants][allStations] matrix
+takedownTimes = [[0, 0, 0, 0, 10, 0, 0, 0, 0, 0]];
+
+// worker walking times from station to station as a [allStations][allStations] matrix
+workerWalkingTimes = [[0, 30, 60, 90, 120, 150, 180, 150, 120, 90], [30, 0, 30, 60, 90, 120, 150, 120, 90, 120], [60, 30, 0, 30, 60, 90, 120, 90, 120, 150], [90, 60, 30, 0, 30, 60, 90, 120, 150, 180], [120, 90, 60, 30, 0, 30, 60, 90, 120, 150], [150, 120, 90, 60, 30, 0, 30, 60, 90, 120], [180, 150, 120, 90, 60, 30, 0, 30, 60, 90], [150, 120, 90, 120, 90, 60, 30, 0, 30, 60], [120, 90, 120, 150, 120, 90, 60, 30, 0, 30], [90, 120, 150, 180, 150, 120, 90, 60, 30, 0]];

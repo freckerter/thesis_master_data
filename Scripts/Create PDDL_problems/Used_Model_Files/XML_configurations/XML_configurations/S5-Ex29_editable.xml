@@ -1,0 +1,77 @@
+<FlowShopConfiguration name="S5-Ex29">
+<WalkingTimes>
+<WalkingTime start="STATION-1" end="STATION-1" traveltime="0"/>
+<WalkingTime start="STATION-2" end="STATION-1" traveltime="10"/>
+<WalkingTime start="STATION-3" end="STATION-1" traveltime="20"/>
+<WalkingTime start="STATION-4" end="STATION-1" traveltime="30"/>
+<WalkingTime start="STATION-5" end="STATION-1" traveltime="40"/>
+<WalkingTime start="STATION-1" end="STATION-2" traveltime="10"/>
+<WalkingTime start="STATION-2" end="STATION-2" traveltime="0"/>
+<WalkingTime start="STATION-3" end="STATION-2" traveltime="10"/>
+<WalkingTime start="STATION-4" end="STATION-2" traveltime="20"/>
+<WalkingTime start="STATION-5" end="STATION-2" traveltime="30"/>
+<WalkingTime start="STATION-1" end="STATION-3" traveltime="20"/>
+<WalkingTime start="STATION-2" end="STATION-3" traveltime="10"/>
+<WalkingTime start="STATION-3" end="STATION-3" traveltime="0"/>
+<WalkingTime start="STATION-4" end="STATION-3" traveltime="10"/>
+<WalkingTime start="STATION-5" end="STATION-3" traveltime="20"/>
+<WalkingTime start="STATION-1" end="STATION-4" traveltime="30"/>
+<WalkingTime start="STATION-2" end="STATION-4" traveltime="20"/>
+<WalkingTime start="STATION-3" end="STATION-4" traveltime="10"/>
+<WalkingTime start="STATION-4" end="STATION-4" traveltime="0"/>
+<WalkingTime start="STATION-5" end="STATION-4" traveltime="10"/>
+<WalkingTime start="STATION-1" end="STATION-5" traveltime="40"/>
+<WalkingTime start="STATION-2" end="STATION-5" traveltime="30"/>
+<WalkingTime start="STATION-3" end="STATION-5" traveltime="20"/>
+<WalkingTime start="STATION-4" end="STATION-5" traveltime="10"/>
+<WalkingTime start="STATION-5" end="STATION-5" traveltime="0"/>
+</WalkingTimes>
+<Variants>
+<Variant id="VARIANT-1">
+<WorkSteps>
+<WorkStep id="WORKSTEP-V1-S1" location="STATION-1" automatic="False">
+<Duration>100</Duration>
+</WorkStep>
+<WorkStep id="WORKSTEP-V1-S2" location="STATION-2" automatic="False">
+<Duration>100</Duration>
+</WorkStep>
+<WorkStep id="AUTOWORKSTEP-V1-S3" location="STATION-3" automatic="True">
+<Duration>80</Duration>
+<SetupTime>10</SetupTime>
+<TakedownTime>10</TakedownTime>
+</WorkStep>
+<WorkStep id="WORKSTEP-V1-S4" location="STATION-4" automatic="False">
+<Duration>100</Duration>
+</WorkStep>
+<WorkStep id="WORKSTEP-V1-S5" location="STATION-5" automatic="False">
+<Duration>100</Duration>
+</WorkStep>
+</WorkSteps>
+</Variant>
+</Variants>
+<ProcessingUnits>
+<ProcessingUnit type="STATION" id="STATION-1" lane="1" position="1"/>
+<ProcessingUnit type="BUFFER" id="BUFFER-1" lane="1" position="1" capacity="1"/>
+<ProcessingUnit type="STATION" id="STATION-2" lane="1" position="2"/>
+<ProcessingUnit type="BUFFER" id="BUFFER-2" lane="1" position="2" capacity="1"/>
+<ProcessingUnit type="STATION" id="STATION-3" lane="1" position="3"/>
+<ProcessingUnit type="BUFFER" id="BUFFER-3" lane="1" position="3" capacity="1"/>
+<ProcessingUnit type="STATION" id="STATION-4" lane="2" position="4"/>
+<ProcessingUnit type="BUFFER" id="BUFFER-4" lane="2" position="4" capacity="1"/>
+<ProcessingUnit type="STATION" id="STATION-5" lane="2" position="5"/>
+</ProcessingUnits>
+</FlowShopConfiguration>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

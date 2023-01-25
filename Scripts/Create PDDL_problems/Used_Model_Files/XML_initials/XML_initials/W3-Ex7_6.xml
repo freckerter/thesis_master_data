@@ -1,0 +1,16 @@
+<FlowShopInitialState name="W3-Ex7">
+<ConfigurationFile name="Example"/>
+<Workers>
+<Worker id="WORKER-1" skill="100" location="STATION-1" releasetime="0"/>
+<Worker id="WORKER-2" skill="100" location="STATION-2" releasetime="0"/>
+<Worker id="WORKER-3" skill="100" location="STATION-3" releasetime="0"/>
+</Workers>
+<Products>
+<Product id="PRODUCT-1" variant="VARIANT-1"/>
+<Product id="PRODUCT-2" variant="VARIANT-1"/>
+<Product id="PRODUCT-3" variant="VARIANT-1"/>
+<Product id="PRODUCT-4" variant="VARIANT-1"/>
+<Product id="PRODUCT-5" variant="VARIANT-1"/>
+<Product id="PRODUCT-6" variant="VARIANT-1"/>
+</Products>
+</FlowShopInitialState>
